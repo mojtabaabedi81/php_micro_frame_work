@@ -6,7 +6,9 @@
     },
     "autoload": {
         "psr-4": {
-            "Vendor\\Mfw\\": "src/"
+           "App\\": "src/",
+            "Controllers\\": "Controllers/",
+            "Models\\": "models/"
         }
     },
     "authors": [
