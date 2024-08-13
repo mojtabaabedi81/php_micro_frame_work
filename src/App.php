@@ -2,6 +2,8 @@
 
 namespace App;
 
+use PDO;
+
 class App
 {
     protected $request;
@@ -14,5 +16,10 @@ class App
     public function getRequest()
     {
         return $this->request;
+    }
+
+    public static function getPdo()
+    {
+        return  new PDO('mysql:host = localhost; dbname = micro_frame_work', 'root', '');
     }
 }
