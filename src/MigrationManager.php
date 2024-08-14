@@ -30,11 +30,14 @@ class MigrationManager
             // add more migration if you want
         ];
 
+        //this foreach excute the migration up for each migration we have 
         foreach ($migrations as $migration) {
             $migration->up();
         }
         echo " migration excuited successfully\n";
     }
+
+    //here is where the user run : migrate.php rollback in command line(in directory of project) run this public function
     public function rollback()
     {
         $migrations = [
@@ -42,6 +45,8 @@ class MigrationManager
             //add more migration here.
         ];
 
+
+        //this foreach excute the migration down for each migration we have 
         foreach ($migrations as $migration) {
             $migration->down();
         }
