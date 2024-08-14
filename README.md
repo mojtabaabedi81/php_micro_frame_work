@@ -55,3 +55,13 @@ To start the built-in PHP server, run:
 
 ```bash
 php -S localhost:8080 -t public
+
+```
+
+### Running the migration
+
+To migrate your tables:
+
+```bash
+php migrate.php migrate
+
